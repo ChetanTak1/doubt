@@ -15,7 +15,7 @@ app.post("/sign-up",function(req,res){
         password:password
     })
     res.json({
-        message:"you are signed up,chal abhi hawa aane de"
+        message:"you are signed up"
     })
 })
 app.post("/sign-in",function(req,res){
@@ -37,7 +37,7 @@ app.post("/sign-in",function(req,res){
     })}
     else{
         res.json({
-            message:"ops somethings wrong"
+            message:"invalid credentials"
             
         })
     }
